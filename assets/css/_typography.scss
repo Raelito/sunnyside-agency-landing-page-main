@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
+
+$ff-body: "Barlow", sans-serif;
+$ff-heading: "Fraunces", serif;
+$fsz-body: rem(18);
+
+.heading {
+  font-family: $ff-heading;
+  font-weight: 900;
+  color: $clr-neutral-Very-dark-desaturated-blue;
+  line-height: 1.2;
+  &.-xl {
+    font-size: clamp(2.5rem, 5vw, 3.5rem); //H1
+    letter-spacing: rem(7);
+    text-transform: uppercase;
+  }
+  &.-l {
+    font-size: clamp(2rem, 3vw, 2.5rem); //H2
+  }
+  &.-m {
+    font-size: rem(28); //H3
+  }
+  &.-s {
+    font-size: rem(18); //H4
+  }
+  &.-xs {
+    font-size: clamp(1rem, 2vw, 1.125rem); //H5
+    letter-spacing: clamp(0.26rem, 1vw, 0.36em);
+    text-transform: uppercase;
+  }
+  &.-white {
+    color: $clr-neutral-White;
+  }
+}
+
+.body {
+  font-family: $ff-body;
+  font-size: rem(18);
+  font-weight: 600;
+  line-height: 1.666;
+  &.-m {
+    font-size: rem(16);
+    line-height: calc(27 / 16);
+  }
+  &.-s {
+    font-size: rem(14);
+  }
+  &-.testimonials {
+    line-height: 1.777;
+  }
+}
+
+.subheading {
+  font-family: $ff-body;
+  font-size: rem(14);
+}
+.link {
+  letter-spacing: rem(0.64);
+}
