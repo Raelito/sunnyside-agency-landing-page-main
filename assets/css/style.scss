@@ -347,7 +347,23 @@
       margin-left: rem(112);
     }
   }
+  @media (max-width: rem(1281)) {
+    .transform {
+      > .container {
+        > .content {
+          grid-column: 1;
+          grid-row: 1;
+          margin-left: rem(32);
+        }
+      }
+    }
 
+    .audience {
+      > .container > .content {
+        margin-left: rem(32);
+      }
+    }
+  }
   .services {
     display: flex;
     margin: 0 0 rem(162);
